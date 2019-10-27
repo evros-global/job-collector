@@ -1,3 +1,3 @@
 # Web-Dev
 
-THIS IS A PROJECT DEVELOPED BY REFUGEES MENTORED BY EVROS WHICH IS A NON-PROFIT TO HELP REFUGEES WITH REMOTE JOB SKILLS
+This is a project developed by *refugees* mentored by a non-profit called [Evros](http://www.evrosglobal.org)
