@@ -1,13 +1,22 @@
 import requests
 from bs4 import BeautifulSoup as bs
 import csv
-url=("https://www.indeed.com/q-Web-Developer-l-San-Francisco,-CA-jobs.html","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=10","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=20","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=30","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=40","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=50","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=60","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=70","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=80","https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=90")
+url=("https://www.indeed.com/q-Web-Developer-l-San-Francisco,-CA-jobs.html",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=10",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=20",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=30",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=40",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=50",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=60",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=70",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=80",
+     "https://www.indeed.com/jobs?q=Web+Developer&l=San+Francisco%2C+CA&start=90")
 
-jobs = []
-comName=[]
-desc=[]
-loca=[]
-date=[]
+jobs = ["Job Title"]
+comName=["Company Name"]
+desc=["Description"]
+loca=["Location"]
+date=["Post Date"]
 
 for x in url:
 
