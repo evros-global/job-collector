@@ -54,7 +54,7 @@ orderlist(comName)
 orderlist(desc)
 
 #creating csv
-with open ("c:/users/admin/desktop/newcsv.csv", "w", newline="") as f:
+with open ("./newcsv.csv", "w", newline="") as f:
     writer =csv.writer(f, delimiter="-")
     writer.writerow(jobs)
     writer.writerow(comName)
