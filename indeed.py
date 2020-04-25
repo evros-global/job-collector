@@ -53,6 +53,5 @@ def scrape_indeed(url, num_pages):
     #creating csv
     with open ("./newcsv.csv", "w", newline="") as f:
         writer =csv.writer(f, delimiter="-")
-        writer.writerow(["Job Title","Company Name","Description"])
         for i in range(len(jobs)):
             writer.writerow([jobs[i],comName[i],desc[i]])
