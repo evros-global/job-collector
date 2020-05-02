@@ -16,10 +16,12 @@ def returnFile():
   #scrapy crawl indeed -o indeed.csv -a job="" -a location="" -a pages=2
   if(downloadType=='JSON'):
     #os.popen('scrapy crawl indeed -o indeed.json -a attr="'+job+'-'+location+'"')
+    os.system('del indeed.json')
     os.system('scrapy crawl indeed -o indeed.json -a job="'+job+'" -a location="'+location+'" -a pages='+str(numberOfPages))
     return send_file("indeed.json")
   else:
     #os.popen('scrapy crawl indeed -o indeed.csv -a attr="'+job+'-'+location+'"')
+    os.system('del indeed.csv')
     os.system('scrapy crawl indeed -o indeed.csv -a job="'+job+'" -a location="'+location+'" -a pages='+str(numberOfPages))
     return send_file("indeed.csv")
   
